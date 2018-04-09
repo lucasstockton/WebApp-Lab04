@@ -1,44 +1,67 @@
 ﻿@model System.DateTime
 
-
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lab 4 - Index";
 }
 
 
 @if (Convert.ToDateTime("11:59") > Model)
+
 {
-    <div class="one">Good Morning!</div>
+    <h1 class="one">Good Morning!</h1>
+}
+else if (Convert.ToDateTime("18:00") >= Model)
+{
+    <h1 class="one">Good Afternoon!</h1>
 }
 else
 {
-    <div class="one">Good Evening!</div>
-
-
+    <h1 class="one">Good Night!</h1>
 }
+
 
 
 
 <div class="two">The time is @Model.ToString("h:mm tt") on @Model.ToString("dddd, MMMM dd, yyyy")</div>
 
 
+
+
+
 @if (DateTime.IsLeapYear(Model.Year))
+
 {
+
     <div class="three">
+
         There are @(366 - Model.DayOfYear) more days in @Model.ToString("yyyy")
+
     </div>
+
     //  365
+
 }
+
 else
+
 {
 
+
+
     <div class="three">
+
         There are @(365 - Model.DayOfYear) more days in @Model.ToString("yyyy")
+
     </div>
+
     //  365
+
+
+
 
 
 }
 
-<div class="four"><a href="">Go to Page 2</a></div>
 
+
+<div class="four"><a href="@Url.Action("Page2", "Lab4")">Go to Page 2</a></div>

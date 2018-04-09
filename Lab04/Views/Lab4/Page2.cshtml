@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Lab4.Models.Profile>
+
+
+@{
+    ViewData["Title"] = "Page2";
+}
+
+<h1>Page2 - Random Data</h1>
+
+<p>Select the number of profiles to display : </p>
+
+@for (int i = 1; i < 6; i++)
+{
+
+
+    <a class="btn btn-info" href="/Lab4/Page2/@i.ToString()">@i.ToString()</a>
+
+}
+
+
+
+           @foreach (Profile a in Model)
+            {
+
+<div class="profilebox">
+    <div class="profileheading">Profile @a.Number.ToString()</div>
+    <p><b>Name : </b>@a.Name</p>
+    <p><b>Email :</b> @a.Email</p>
+    <p><b>Bio : </b> @a.Bio</p>
+</div>
+            }
+
+
+
+<p style="margin-top:10px;">
+    <a class="btn btn-success" href="/Lab4/Page3">Page 3</a>
+
+</p>

@@ -5,6 +5,103 @@
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
+
+
+h1 {
+    color: white;
+    background-color: purple !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: x-large !important;
+    padding: 20px !important;
+    border: 0px solid purple !important;
+    border-radius: 8px !important;
+    margin-top: 25px !important;
+}
+
+
+.profilebox{
+    margin-top:10px;
+    border : 1px solid black;
+}
+
+.profileheading{
+    padding:5px;
+    background-color:grey;
+    font-size:x-large;
+    color:white;
+
+}
+.profilebody{
+
+    padding:20px;
+}
+
+.one {
+    color: white;
+    background-color: purple;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 20px;
+    border: 0px solid purple;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+
+.two {
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+
+.three {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+
+}
+
+
+.four a {
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    margin-top:10px;
+   
+}
+
+
+.four a:visited {
+    color:white;
+}
+
+
+.four a:hover
+{
+    color:red;
+}
+
+    .tree {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
