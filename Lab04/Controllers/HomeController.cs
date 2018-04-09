@@ -4,16 +4,15 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Lab04.Models;
+using Lab4.Models;
 
-namespace Lab04.Controllers
+namespace Lab4.Controllers
 {
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            //return View();
-            return Redirect("Lab4");
+            return Redirect("Lab4"); //replaced //return View();
         }
 
         public IActionResult About()
